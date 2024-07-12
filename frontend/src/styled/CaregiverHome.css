@@ -1,0 +1,70 @@
+.caregiver-home-container {
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .header a:hover {
+    text-decoration: underline;
+  }
+  
+  .requests-list {
+    margin-top: 20px;
+  }
+  
+  .request-card {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .request-card:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .elderly-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .elderly-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .elderly-details {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .accept-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .accept-button:hover {
+    background-color: #218838;
+  }
+  
