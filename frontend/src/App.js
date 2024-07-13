@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
+import SignIn from './components/SignIn';
 import Login from './components/Login';
 import ElderlyHome from './components/ElderlyHome';
 import CaregiverHome from './components/CaregiverHome';
@@ -15,6 +16,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/sign-in" component={SignIn} />
           <Route path="/login" component={Login} />
           <Route path="/elderly-home" component={ElderlyHome} />
           <Route path="/caregiver-home" component={CaregiverHome} />
