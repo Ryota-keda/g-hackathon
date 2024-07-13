@@ -1,70 +1,73 @@
 .elderly-home-container {
-    padding: 20px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f8f9fa;
-    padding: 10px;
-    border-bottom: 1px solid #dee2e6;
-  }
-  
-  .header a {
-    text-decoration: none;
-    color: #007bff;
-    margin-right: 10px;
-  }
-  
-  .header a:hover {
-    text-decoration: underline;
-  }
-  
-  .caregivers-list {
-    margin-top: 20px;
-  }
-  
-  .caregiver-card {
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    padding: 15px;
-    margin-bottom: 10px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .caregiver-card:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .caregiver-info {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .caregiver-name {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .caregiver-details {
-    font-size: 14px;
-    color: #6c757d;
-  }
-  
-  .select-button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .select-button:hover {
-    background-color: #0056b3;
-  }
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 2px solid #0056b3;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.caregiver-form {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+
   

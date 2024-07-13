@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import '../styled/ElderlyHome.css';
 
-const caregivers = [
-  { id: 1, name: '介護者1', details: '介護者1の詳細情報' },
-  { id: 2, name: '介護者2', details: '介護者2の詳細情報' },
-  // 他の介護者のデータを追加
-];
-
 const ElderlyHome = () => {
   const history = useHistory();
+  const [date, setDate] = useState('');
+  const [dayOfWeek, setDayOfWeek] = useState('');
+  const [timeSlot, setTimeSlot] = useState('');
 
   const handleSelectCaregiver = (id) => {
+    history.push('/payment');
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission logic here, e.g., sending data to server
+
+    // After submission, navigate to payment page
     history.push('/payment');
   };
 
@@ -19,26 +24,45 @@ const ElderlyHome = () => {
     <div className="elderly-home-container">
       <div className="header">
         <h1>高齢者専用ホーム画面</h1>
-        <Link to="/elderly-management">管理画面</Link>
+        <Link to="/elderly-management" className="management-link">管理画面</Link>
       </div>
-      <div className="caregivers-list">
-        {caregivers.map((caregiver) => (
-          <div key={caregiver.id} className="caregiver-card">
-            <div className="caregiver-info">
-              <span className="caregiver-name">{caregiver.name}</span>
-              <span className="caregiver-details">{caregiver.details}</span>
-            </div>
-            <button
-              className="select-button"
-              onClick={() => handleSelectCaregiver(caregiver.id)}
-            >
-              選択
-            </button>
-          </div>
-        ))}
-      </div>
+      <form onSubmit={handleSubmit} className="caregiver-form">
+        <div className="form-group">
+          <label htmlFor="date">日付け:</label>
+          <input
+            type="date"
+            id="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="dayOfWeek">曜日:</label>
+          <input
+            type="text"
+            id="dayOfWeek"
+            value={dayOfWeek}
+            onChange={(e) => setDayOfWeek(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="timeSlot">時間帯:</label>
+          <input
+            type="text"
+            id="timeSlot"
+            value={timeSlot}
+            onChange={(e) => setTimeSlot(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit" className="submit-button">送信</button>
+      </form>
     </div>
   );
 };
 
 export default ElderlyHome;
+
+

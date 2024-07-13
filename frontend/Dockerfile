@@ -7,6 +7,8 @@ COPY package.json package-lock.json ./
 
 RUN npm install
 
+RUN npm install @mui/material @emotion/react @emotion/styled
+
 COPY . .
 
 RUN npm run build
