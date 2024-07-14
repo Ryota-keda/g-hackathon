@@ -1,70 +1,90 @@
 .caregiver-home-container {
-    padding: 20px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f8f9fa;
-    padding: 10px;
-    border-bottom: 1px solid #dee2e6;
-  }
-  
-  .header a {
-    text-decoration: none;
-    color: #007bff;
-    margin-right: 10px;
-  }
-  
-  .header a:hover {
-    text-decoration: underline;
-  }
-  
-  .requests-list {
-    margin-top: 20px;
-  }
-  
-  .request-card {
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    padding: 15px;
-    margin-bottom: 10px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .request-card:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .elderly-info {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .elderly-name {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .elderly-details {
-    font-size: 14px;
-    color: #6c757d;
-  }
-  
-  .accept-button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #28a745;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .accept-button:hover {
-    background-color: #218838;
-  }
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #333;
+  font-size: 2em;
+}
+
+.management-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.management-button:hover {
+  background-color: #0056b3;
+}
+
+.requests-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.request-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.request-card:hover {
+  transform: scale(1.05);
+}
+
+.elderly-info {
+  margin-bottom: 10px;
+}
+
+.elderly-name {
+  font-size: 1.5em;
+  color: #007BFF;
+  margin-bottom: 5px;
+}
+
+.elderly-details {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.elderly-location {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.accept-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.accept-button:hover {
+  background-color: #218838;
+}
+
   

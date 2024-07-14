@@ -7,6 +7,7 @@ import CaregiverHome from './components/CaregiverHome';
 import ElderlyManagement from './components/ElderlyManagement';
 import CaregiverManagement from './components/CaregiverManagement';
 import Payment from './components/Payment';
+import SignUp from './components/SignUp';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/elderly-management" component={ElderlyManagement} />
           <Route path="/caregiver-management" component={CaregiverManagement} />
           <Route path="/payment" component={Payment} />
+          <Route path="/signup" component={SignUp} />
         </Switch>
       </div>
     </Router>
@@ -28,4 +30,3 @@ function App() {
 }
 
 export default App;
-

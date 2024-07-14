@@ -1,0 +1,53 @@
+.caregiver-management-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .caregiver-management-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .caregiver-info, .elderly-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .caregiver-info h2, .elderly-info h2 {
+    color: #007BFF;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .caregiver-info p, .elderly-info p {
+    color: #555;
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
+  .payment-link {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .payment-link:hover {
+    background-color: #0056b3;
+  }
+  
